@@ -26,7 +26,7 @@ namespace FredApi
             name = name ?? data?.name;
 
             string responseMessage = string.IsNullOrEmpty(name)
-                ? "Hello from Github Actions :)";
+                ? "Hello" : "Hello {name} from Github Actions :)";
 
             return new OkObjectResult(responseMessage);
         }
